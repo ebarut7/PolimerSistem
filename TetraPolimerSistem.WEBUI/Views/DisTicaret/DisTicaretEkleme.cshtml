@@ -1,0 +1,126 @@
+﻿@model DisTicaretAddDto
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dıi Ticaret Ekleme</title>
+    <link rel="stylesheet" href="~/css/DisTicaretEkleme.css">
+</head>
+
+<body>
+
+
+    <div class="card-ekleme">
+        <h3 class="title">Sipariş Ekleme Sayfası</h3>
+        <form class="ekleme-frm" asp-action="DisTicaretEkleme" method="post">
+
+            <label>Ithalat Firma :</label>
+            <input type="text" name="IthalatFirma">
+
+            <label>Ihracat Firma :</label>
+            <input type="text" name="IhracatFirma">
+
+            <label>Konşimento Numarası :</label>
+            <input type="text" name="KonsimentoNumarasi">
+
+            <label>Sipariş Tarihi :</label>
+            <input type="date" name="SiparisTarihi">
+
+            <label>Konteyner Numarası :</label>
+            <input type="text" name="KonteynirNumarasi">
+
+            <label>Beyanname Numarası :</label>
+            <input type="text" name="BeyannameNumarasi">
+
+            <label>Dosya Numarası:</label>
+            <input type="text" name="DosyaNumarasi" />
+
+            <label>Ürün Tonaj :</label>
+            <input type="text" name="UrunTonaj" />
+
+            <label>Fatura Numarası :</label>
+            <input type="text" name="FaturaNumarasi" /> 
+            
+            <label>Ürün Adı :</label>
+            <input type="text" name="UrunAdi" />  
+            
+            <label>Ödeme Şekli :</label>
+            <input type="text" name="OdemeSekli" />
+
+            <label>ETA :</label>
+            <input type="date" name="ETA" />
+
+            <label>Teslimat Yeri :</label>
+            <input type="text" name="TeslimatYeri" />
+
+            <label>Teslim Şekli :</label>
+            <input type="text" name="TeslimSekli" />
+
+
+            <label>Giriş Yapan Kullanıcı :</label>
+            <input type="text" name="GirisYapanKullanici" />
+
+
+            <label>Satılabilir Kısım :</label>
+            <input type="text" name="SatilabilirKisim" />
+
+
+            <label>Teslim Yeri :</label>
+            <input type="text" name="TeslimYeri" />
+
+            <label>Açıklama :</label>
+            <input type="text" name="Aciklama">
+
+
+            <label>Ödeme Durumu :</label>
+            <input type="text" name="OdemeDurumu" />
+            <br>
+
+            <button class="button">Gönder</button>
+
+        </form>
+    </div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

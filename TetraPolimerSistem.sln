@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TetraPolimerSistem.Entities", "TetraPolimerSistem.Entities\TetraPolimerSistem.Entities.csproj", "{62498A30-9874-4B08-B296-2850D8671DBC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TetraPolimerSistem.DataAccess", "TetraPolimerSistem.DataAccess\TetraPolimerSistem.DataAccess.csproj", "{7AE61B9B-4300-461C-A6B4-C466FF471829}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TetraPolimerSistem.Core", "TetraPolimerSistem.Core\TetraPolimerSistem.Core.csproj", "{127EF35C-0DAE-4394-9A0E-E5C3931D6B86}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TetraPolimerSistem.Business", "TetraPolimerSistem.Business\TetraPolimerSistem.Business.csproj", "{CD38D6A8-E032-41A8-BB03-D89E20E99C44}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TetraPolimerSistem.WebApi", "TetraPolimerSistem.WebApi\TetraPolimerSistem.WebApi.csproj", "{85568B3E-2171-4B78-9C77-D84F52A2A5AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TetraPolimerSistem.WEBUI", "TetraPolimerSistem.WEBUI\TetraPolimerSistem.WEBUI.csproj", "{7111E04A-04ED-4084-973D-8177950CC00C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62498A30-9874-4B08-B296-2850D8671DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62498A30-9874-4B08-B296-2850D8671DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62498A30-9874-4B08-B296-2850D8671DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62498A30-9874-4B08-B296-2850D8671DBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AE61B9B-4300-461C-A6B4-C466FF471829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AE61B9B-4300-461C-A6B4-C466FF471829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AE61B9B-4300-461C-A6B4-C466FF471829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AE61B9B-4300-461C-A6B4-C466FF471829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{127EF35C-0DAE-4394-9A0E-E5C3931D6B86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{127EF35C-0DAE-4394-9A0E-E5C3931D6B86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{127EF35C-0DAE-4394-9A0E-E5C3931D6B86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{127EF35C-0DAE-4394-9A0E-E5C3931D6B86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD38D6A8-E032-41A8-BB03-D89E20E99C44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD38D6A8-E032-41A8-BB03-D89E20E99C44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD38D6A8-E032-41A8-BB03-D89E20E99C44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD38D6A8-E032-41A8-BB03-D89E20E99C44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85568B3E-2171-4B78-9C77-D84F52A2A5AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85568B3E-2171-4B78-9C77-D84F52A2A5AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85568B3E-2171-4B78-9C77-D84F52A2A5AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85568B3E-2171-4B78-9C77-D84F52A2A5AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7111E04A-04ED-4084-973D-8177950CC00C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7111E04A-04ED-4084-973D-8177950CC00C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7111E04A-04ED-4084-973D-8177950CC00C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7111E04A-04ED-4084-973D-8177950CC00C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CEDCA9B7-DE53-48A2-A067-9B229A0F8340}
+	EndGlobalSection
+EndGlobal

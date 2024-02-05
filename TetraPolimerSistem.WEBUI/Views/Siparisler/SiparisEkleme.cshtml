@@ -1,0 +1,83 @@
+﻿@model OrderAddDto
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sipariş Ekleme</title>
+    <link rel="stylesheet" href="~/css/SiparisEkleme.css">
+</head>
+
+<body>
+
+
+    <div class="card-ekleme">
+        <h3 class="title">Sipariş Ekleme Sayfası</h3>
+        <form class="ekleme-frm" asp-action="SiparisEkleme" method="post">
+
+            <label>Proforma Numarası :</label>
+            <input type="text" name="ProformaNumara">
+
+            <label>Sipariş Veren :</label>
+            <input type="text" name="SiparisVerenFirma">
+
+            <label>Sipariş Alan :</label>
+            <input type="text" name="SiparisAlanFirma">
+
+            <label>Sipariş Tarihi :</label>
+            <input type="date" name="SiparisTarihi">
+
+            <label>Sevk Tarihi :</label>
+            <input type="date" name="SevkTarihi">
+
+            <label>Sevkiyat Detay :</label>
+            <input type="number" name="SevkiyatDetayId">
+
+            <label>Açıklama:</label>
+            <input type="text" name="Aciklama" />
+
+            <label>Kur :</label>
+            <input type="text" name="Kur" />
+
+            <label>Döviz Cinsi :</label>
+            <select name="DovizCinsi" id="" style="width: 250px; height: 30px;">
+                <option value="USD">USD</option>
+                <option value="EURO">EURO</option>
+                <option value="TL">TRY</option>
+            </select>
+
+            <label>Ürün Tonaj :</label>
+            <input type="text" name="UrunTonaj" />
+
+            <label>Ürün Adı :</label>
+            <input type="text" name="UrunAdi">
+
+            <label>Sevk Durumu :</label>
+            <select name="SevkDurumu" id="" style="width: 250px; height: 30px;">
+                <option value="Sipariş">Sipariş</option>
+                <option value="Yükleme Bekliyor">Yükleme Bekliyor</option>
+                <option value="Yolda">Yolda</option>
+                <option value="Teslim Edilen">Teslim Edilen</option>
+
+            </select>
+
+            <label>Birim Fiyat :</label>
+            <input type="text" name="BirimFiyat" />
+
+            <label>Nakliye Tutar :</label>
+            <input type="text" name="NakliyeTutar" />
+
+            <label>KDV :</label>
+            <input type="text" name="KDV" />
+            <br>
+
+            <button class="button">Gönder</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgba(34, 179, 15, 0.178);
+    font-family: 'Rubik',sans-serif;
+}
+
+.title {
+    color: #1D2231;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.card-ekleme {
+    position: relative;
+    background-color: #5ca804ad;
+    width: 900px;
+    height: 850px;
+    border: 3px solid #e1e3e686;
+    border-radius: 20px;
+    transition: .4s;
+    margin-bottom: -120px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    gap: 1%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.button {
+    color: #1D2231;
+    background-color: #e6e1e4;
+    text-decoration: none;
+    border: 2px solid #1d2231a6;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+.ekleme-frm {
+    display: inline-flex;
+    flex-direction: column;
+    float: left;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    float: left;
+}

@@ -1,0 +1,75 @@
+﻿@model DisTicaretVM
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sipariş Ekleme</title>
+    <link rel="stylesheet" href="~/css/DisTicaretDetay.css">
+</head>
+
+
+<body>
+
+
+    <div class="card-ekleme">
+        <h3 class="title">Dış Ticaret Detay Sayfası</h3>
+        <form class="ekleme-frm">
+
+            <label>Sipariş Tarihi : @Model.SiparisTarihi</label>
+
+            <label>Ithalat Firma : @Model.IthalatFirma</label>
+
+            <label>Ihracat Firma : @Model.IhracatFirma</label>
+
+            <label>Konşimento Numarasi : @Model.KonsimentoNumarasi</label>
+
+            <label>Konteyner Numarasi  : @Model.KonteynirNumarasi</label>
+
+            <label>Beyanname Numarası : @Model.BeyannameNumarasi</label>
+
+            <label>Dosya Numarası : @Model.DosyaNumarasi</label>
+
+            <label>Urun Tonaj : @Model.UrunTonaj</label>
+
+
+            <label>Fatura Numarası : @Model.FaturaNumarasi</label>
+
+            <label>Ürün Adı : @Model.UrunAdi</label>
+
+            <label>Ödeme Şekli : @Model.OdemeSekli</label>
+
+            <label>ETA : @Model.ETA</label>
+
+            <label>Teslimat Yeri : @Model.TeslimatYeri</label>
+
+            <label>Teslim Şekli : @Model.TeslimSekli</label>
+
+            <label>GirisYapanKullanici : @Model.GirisYapanKullanici</label>
+
+            <label>Satılabilir Kısım : @Model.SatilabilirKisim</label>
+
+            <label>Teslim Yeri : @Model.TeslimYeri</label>
+
+            <label>Açıklama : @Model.Aciklama</label>
+
+            <label>Ödeme Durumu : @Model.OdemeDurumu</label>
+
+            <label>MaliyetId : @Model.MaliyetId</label>
+
+            <br>
+
+            @Html.ActionLink("Güncelle", "DisTicaretGuncelleme", new { id = Model.Id })
+            @Html.ActionLink("Sil", "Delete", new { id = Model.Id })
+            @Html.ActionLink("Maliyet Ekle","MaliyetGuncelleme","DisTicaretMaliyet", new { id = Model.MaliyetId })
+            @Html.ActionLink("Maliyet Detay","MaliyetDetay","DisTicaretMaliyet", new { id = Model.MaliyetId })
+
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+﻿@model DisTicaretMaliyetVM
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maliyet Ekleme</title>
+    <link rel="stylesheet" href="~/css/MaliyetGuncelleme.css">
+</head>
+<body>
+
+    <div class="card-ekleme">
+        <h3 class="title">Maliyet Ekleme Sayfası</h3>
+        <form class="ekleme-frm" asp-action="MaliyetGuncelleme" method="post">
+
+            <label>Kur :</label>
+            <input type="text" value="@Model.Kur" name="Kur">
+
+            <label>Birim Fiyat :</label>
+            <input type="text" value="@Model.BirimFiyat" name="BirimFiyat">
+
+            <label>Ürün Tonaj :</label>
+            <input type="text" value="@Model.UrunTonaj" name="UrunTonaj">
+
+            <label>Gümrük Oran :</label>
+            <input type="text" value="@Model.GumrukOran" name="GumrukOran">
+
+            <label>Gümrük Vergisi :</label>
+            <input type="text" value="@Model.GumrukVergisi" name="GumrukVergisi">
+
+            <label>Damga Vergisi  :</label>
+            <input type="text" value="@Model.DamgaVergisi" name="DamgaVergisi">
+
+            <label>Lokal Masraf  :</label>
+            <input type="text" value="@Model.LokalMasraf" name="LokalMasraf">
+
+            <label>Liman Masraf  :</label>
+            <input type="text" value="@Model.LimanMasraf" name="LimanMasraf">
+
+            <label>Ordino Bedel  :</label>
+            <input type="text" value="@Model.OrdinoBedel" name="OrdinoBedel">
+
+            <label>Gümrük Komisyon  :</label>
+            <input type="text" value="@Model.GumrukKomisyon" name="GumrukKomisyon">
+
+            <label>Nakliye :</label>
+            <input type="text" value="@Model.Nakliye" name="Nakliye">
+
+            <label>Demuraj :</label>
+            <input type="text" value="@Model.Demuraj" name="Demuraj">
+
+            <label>Diger :</label>
+            <input type="text" value="@Model.Diger" name="Diger">
+
+
+            <button class="button">Gönder</button>
+
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

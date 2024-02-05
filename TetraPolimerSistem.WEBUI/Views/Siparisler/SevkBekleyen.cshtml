@@ -1,0 +1,64 @@
+﻿@using TetraPolimerSistem.Entities.Dtos.OrderDtos
+@model List<OrderDto>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detay Sayfası</title>
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+    <link rel="stylesheet" href="~/css/SevkBekleyen.css">
+</head>
+
+<div id="container">
+    <div id="card">
+        <table id="tables">
+            <button id="btn1" href="#">Sipariş Ekle</button>
+            <thead>
+
+            <th>Proforma Numarası</th>
+            <th>Sipariş Tarihi</th>
+            <th>Sevk Tarihi</th>
+            <th>Sipariş Veren</th>
+            <th>Sipariş Alan</th>
+            <th>Birim Fiyat</th>
+            <th>Ürün Tonaj</th>
+            <th>Ürün Adı</th>
+            <th>Sevk Durumu</th>
+
+            </thead>
+            <tbody>
+                @foreach (OrderDto orderDto in Model)
+                {
+                    <tr href="#">
+                        <td>@orderDto.ProformaNumara</td>
+                        <td>@orderDto.SiparisTarihi.Date</td>
+                        <td>@orderDto.SevkTarihi.Date</td>
+                        <td>@orderDto.SiparisVerenFirma</td>
+                        <td>@orderDto.SiparisAlanFirma</td>
+                        <td>@orderDto.BirimFiyat</td>
+                        <td>@orderDto.UrunTonaj</td>
+                        <td>@orderDto.UrunAdi</td>
+                        <td>@orderDto.SevkDurumu</td>
+                        <td><button href="#">Detay</button></td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+</div>
+
+
+
+<div class="right-column">
+    <img src="" alt="" class="left-column">
+</div>
+</html>
+
+
+
+
+
+

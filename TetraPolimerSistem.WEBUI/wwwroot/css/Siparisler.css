@@ -1,0 +1,71 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(34, 179, 15, 0.178);
+}
+
+
+
+.logoisim {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+
+
+.group {
+    display: flex;
+    align-items: center;
+}
+
+
+.navigation .login ul {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 13px;
+}
+
+.navigation .login li:hover ul {
+    display: block;
+}
+
+.right-column {
+    width: 100%;
+    margin: auto;
+    margin-top: 145px;
+}
+
+.left-column {
+    float: left;
+}
+
+#container {
+    margin-top: 10rem;
+    margin-left: 35px;
+}
+
+.container-1 {
+    background-color: rgba(245, 245, 245, 0.675);
+    border: 3px solid white;
+    color: black;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 155px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    text-align: center;
+    column-gap: 25px;
+}

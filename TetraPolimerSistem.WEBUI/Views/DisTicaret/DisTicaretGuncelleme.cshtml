@@ -1,0 +1,87 @@
+﻿@model DisTicaretVM
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dış Ticaret İşlem Ekleme</title>
+    <link rel="stylesheet" href="~/css/DisTicaretGuncelleme.css">
+</head>
+
+<body>
+
+
+    <div class="card-ekleme">
+        <h3 class="title">Dış Ticaret Güncelleme </h3>
+        <form class="ekleme-frm" asp-action="DisTicaretGuncelleme" method="post">
+
+            <label>Sipariş Tarihi :</label>
+            <input type="date" value="@Model.SiparisTarihi" name="SiparisTarihi">
+
+            <label>İthalat Firma :</label>
+            <input type="text" value="@Model.IthalatFirma" name="IthalatFirma">
+
+            <label>İhracat Firma :</label>
+            <input type="text" value="@Model.IhracatFirma" name="IhracatFirma">
+
+            <label>Konşimento Numarası :</label>
+            <input type="text" value="@Model.KonsimentoNumarasi" name="KonsimentoNumarasi">
+
+            <label>Konteyner Numarası :</label>
+            <input type="text" value="@Model.KonteynirNumarasi" name="KonteynirNumarasi">
+
+            <label>Beyanname Numarası :</label>
+            <input type="text" value="@Model.BeyannameNumarasi" name="BeyannameNumarasi">
+
+            <label>Dosya Numarası :</label>
+            <input type="text" value="@Model.DosyaNumarasi" name="DosyaNumarasi">
+             
+            <label>Ürün Tonaj :</label>
+            <input type="text" value="@Model.UrunTonaj" name="UrunTonaj">
+
+            <label>Fatura Numarası  :</label>
+            <input type="text" value="@Model.FaturaNumarasi" name="FaturaNumarasi">
+
+            <label>Urun Adı :</label>
+            <input type="text" value="@Model.UrunAdi" name="UrunAdi">
+
+            <label>Ödeme Şekli :</label>
+            <input type="text" value="@Model.OdemeSekli" name="OdemeSekli">
+
+            <label>ETA :</label>
+            <input type="date" value="@Model.ETA" name="ETA">
+
+            <label>Teslimat Yeri :</label>
+            <input type="text" value="@Model.TeslimatYeri" name="TeslimatYeri">
+
+            <label>Teslim Şekli :</label>
+            <input type="text" value="@Model.TeslimSekli" name="TeslimSekli">
+
+            <label>Giriş Yapan Kullanıcı :</label>
+            <input type="text" value="@Model.GirisYapanKullanici" name="GirisYapanKullanici">
+
+            <label>Satılabılır Kısım :</label>
+            <input type="text" value="@Model.SatilabilirKisim" name="SatilabilirKisim">
+
+            <label>Teslim Yeri :</label>
+            <input type="text" value="@Model.TeslimYeri" name="TeslimYeri">
+
+            <label>Açıklama :</label>
+            <input type="text" value="@Model.Aciklama" name="Aciklama">
+
+            <label>Ödeme Durumu :</label>
+            <input type="text" value="@Model.OdemeDurumu" name="OdemeDurumu">
+
+            <label>Maliyet Id :</label>
+            <input type="text" value="@Model.MaliyetId" name="MaliyetId">
+
+            <button class="button">Gönder</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

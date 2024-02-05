@@ -1,0 +1,109 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(34, 179, 15, 0.178);
+}
+
+
+
+.group {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.navigation .login ul {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 13px;
+}
+
+.navigation .login li:hover ul {
+    display: block;
+}
+
+.right-column {
+    width: 100%;
+    margin: auto;
+    margin-top: 145px;
+}
+
+.left-column {
+    float: left;
+}
+
+#container {
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 80%;
+    height: 5%;
+}
+
+.container-1 {
+    background-color: rgba(245, 245, 245, 0.675);
+    border: 3px solid white;
+    color: black;
+    height: 5%;
+    width: 70%;
+    margin-bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    text-align: center;
+    column-gap: 20%;
+}
+
+th {
+    padding: 10px;
+    text-decoration: underline;
+}
+
+tr {
+    padding: 15px;
+}
+
+td {
+    padding: 10px;
+    padding-left: 1%;
+}
+
+#card {
+    background-color: rgba(32, 163, 6, 0.675);
+    text-align: center;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+
+
+button {
+    color: #1D2231;
+    background-color: aqua;
+    text-decoration: none;
+    border: 2px solid #1d2231a6;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+#btn1 {
+    color: #1D2231;
+    background-color: aquamarine;
+    font-weight: 1000;
+    text-decoration: none;
+    border: 2px solid #1d2231a6;
+    border-radius: 15px;
+    padding: 10px 15px;
+    width: 15%;
+    margin: 5px;
+}

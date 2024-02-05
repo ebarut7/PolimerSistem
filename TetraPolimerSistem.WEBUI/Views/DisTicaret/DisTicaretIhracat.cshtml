@@ -1,0 +1,81 @@
+﻿@using TetraPolimerSistem.Entities.Dtos.DisTicaretDtos
+@model List<DisTicaretDto>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detay Sayfası</title>
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+    <link rel="stylesheet" href="~/css/DisTicaretIhracat.css">
+</head>
+<body>
+
+    <div id="container">
+        <button id="btn1"><a href="~/DisTicaret/DisTicaretEkleme">Dış Ticaret Ekle</a></button>
+        <br />
+        <div id="card">
+            <table id="tables">
+                <thead>
+                <th>Ithalat Firma</th>
+                <th>Ihracat Firma</th>
+                <th>Konsimento Numarası</th>
+                <th>Konteyner Numarası</th>
+                <th>Beyanname Numarası</th>
+                <th>Fatura Numarası</th>
+                <th>Dosya Numarası</th>
+                <th>Ürün Tonaj</th>
+                <th>Ürün Adı</th>
+                <th>Odeme Sekli</th>
+                <th>ETA</th>
+                <th>Teslimat Yeri</th>
+                <th>Teslim Şekli</th>
+                <th>Satılabilir Kısım</th>
+                <th>Teslim Yeri</th>
+                <th>Açıklama</th>
+                <th>Ödeme Durumu</th>
+                </thead>
+                <div id="card">
+                <tbody>
+                        @foreach (DisTicaretDto disTicaret in Model)
+                        {
+                        <tr>
+                            <td>@disTicaret.IthalatFirma</td>
+                            <td>@disTicaret.IhracatFirma</td>
+                            <td>@disTicaret.KonsimentoNumarasi</td>
+                            <td>@disTicaret.KonteynirNumarasi</td>
+                            <td>@disTicaret.BeyannameNumarasi</td>
+                            <td>@disTicaret.FaturaNumarasi</td>
+                            <td>@disTicaret.DosyaNumarasi</td>
+                            <td>@disTicaret.UrunTonaj</td>
+                            <td>@disTicaret.UrunAdi</td>
+                            <td>@disTicaret.OdemeSekli</td>
+                            <td>@disTicaret.ETA</td>
+                            <td>@disTicaret.TeslimatYeri</td>
+                            <td>@disTicaret.TeslimSekli</td>
+                            <td>@disTicaret.SatilabilirKisim</td>
+                            <td>@disTicaret.TeslimYeri</td>
+                            <td>@disTicaret.Aciklama</td>
+                            <td>@disTicaret.OdemeDurumu</td>
+                            <td>@Html.ActionLink("Detay", "DisTicaretIthalat", new { id = disTicaret.Id })</td>
+                        </tr>
+                        }
+
+                </tbody>
+
+
+        </div>
+
+        </table>
+    </div>
+
+    </div>
+
+    <div class="right-column">
+        <img src="" alt="" class="left-column">
+    </div>
+
+</body>
+
+</html>

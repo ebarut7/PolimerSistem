@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetra Polimer</title>
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            box-sizing: border-box;
+        }
+
+
+        .home-header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 15px 15px rgba(0,0,0,0.5);
+        }
+
+        .logoisim {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+
+        .group {
+            display: flex;
+            align-items: center;
+        }
+
+        .home-header ul {
+            position: relative;
+            display: flex;
+            gap: 50px;
+        }
+
+            .home-header ul li {
+                list-style: none;
+            }
+
+                .home-header ul li a {
+                    position: relative;
+                    text-decoration: none;
+                    font-size: 1em;
+                    color: #333;
+                    text-transform: uppercase;
+                    letter-spacing: 0.2em;
+                }
+
+                    .home-header ul li a::before {
+                        content: '';
+                        position: absolute;
+                        bottom: -2px;
+                        width: 100%;
+                        height: 2px;
+                        background: #333;
+                        transform: scaleX(0);
+                        transition: transform 0.9s ease-in-out;
+                        transform-origin: right;
+                    }
+
+                    .home-header ul li a:hover::before {
+                        transform: scaleX(1);
+                        transform-origin: left;
+                    }
+
+        .navigation .login ul {
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            margin-top: 13px;
+        }
+
+        .navigation .login li:hover ul {
+            display: block;
+        }
+
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+
+        .takip {
+            font-size: 15px;
+            text-transform: capitalize;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 300px;
+            color: #333333c7;
+            display: block;
+            transition: all 0.3s ease;
+            bottom: 5px;
+        }
+
+            .takip:hover {
+                color: black;
+                padding-left: 10px;
+            }
+
+
+    </style>
+</head>
+
+<body>
+    <header class="home-header">
+        <a href="/Home/Index" class="logoisim">
+            <img src="~/img/tetralogo.jpg" alt="" width="255px" height="65px">
+
+        </a>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="/Home/Index">Ana Sayfa</a></li>
+                <li><a href="/Siparisler/Siparisler">SIPARISLER</a></li>
+                <li class="login">
+                    <a href="./dis.html">DIS TICARET</a>
+                </li>
+            </ul>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+</body>
+</html>

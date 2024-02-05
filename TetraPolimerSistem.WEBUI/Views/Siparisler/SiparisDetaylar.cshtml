@@ -1,0 +1,68 @@
+﻿
+@model OrderVM
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sipariş Ekleme</title>
+    <link rel="stylesheet" href="~/css/SiparisDetaylar.css">
+</head>
+
+<body>
+
+
+    <div class="card-ekleme">
+        <h3 class="title">Sipariş Detay Sayfası</h3>
+        <form class="ekleme-frm">
+
+            <label>Proforma Numarası : @Model.ProformaNumara</label>
+
+            <label>Sipariş Veren : @Model.SiparisVerenFirma</label>
+
+            <label>Sipariş Alan : @Model.SiparisAlanFirma</label>
+
+            <label>Sipariş Tarihi : @Model.SiparisTarihi</label>
+
+            <label>Sevk Tarihi : @Model.SevkTarihi</label>
+
+            <label>Açıklama : @Model.Aciklama</label>
+
+            <label>Kur : @Model.Kur</label>
+
+            <label>Döviz Cinsi : @Model.DovizCinsi</label>
+
+
+            <label>Ürün Tonaj : @Model.UrunTonaj</label>
+
+            <label>Ürün Adı : @Model.UrunAdi</label>
+
+            <label>Sevk Durumu : @Model.SevkDurumu</label>
+
+            <label>Birim Fiyat : @Model.BirimFiyat</label>
+
+            <label>KDV : @Model.KDV</label>
+
+            <label>TL Maliyet : @Model.MaliyetTL</label>
+
+            <label>Doviz Maliyet : @Model.MaliyetDoviz</label>
+
+            <label>Toplam TL Maliyet : @Model.ToplamTLMaliyet</label>
+
+            <label>Nakliye Tutar : @Model.NakliyeTutar</label>
+
+            <label>Sevkiyat Detay : @Model.SevkiyatDetayId</label>
+
+            <br>
+
+            @Html.ActionLink("Güncelle","SiparisGuncelleme",new {id=Model.Id})
+            @Html.ActionLink("Sil", "Sil", new { id = Model.Id })
+
+        </form>
+    </div>
+
+</body>
+
+</html>
